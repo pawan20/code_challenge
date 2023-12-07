@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -17,20 +15,26 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# NEXT/REACT - TS Challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+An array of sample data can be reached on the server with a GET to /data
 
-## Learn More
+A business user wants to see a very simple front-end display for all participants that have a specific attribute, or all attributes for one specific participant. If the user gives a single attribute, the front-end should display a list of all participants and their details for any participant that has that attribute. The user should also be able to search through that list by typing specific details into a search box. If the user gives a single participant identifier, all information for just that participant should be displayed.
 
-To learn more about Next.js, take a look at the following resources:
+Using the NextJS API routes, create routes to return the 2 types of queries above. Then, use them to serve your implementation of the front-end.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Requirements:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Create the routes to serve the details according to specs:
+	- Get by participant_id
+	- Get by an attribute (e.g. First Name = Mike)
+- Create a front end to visualize the data
 
-## Deploy on Vercel
+A search box (fuzzy) to give me a list of participants based on either the participant id, first name, last name, city as I type it in (search-ahead)
+The returned list should show the participant number, state, last name and first name with a “detail” collapsible that shows the full record in an easy-to-read format
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Instructions:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Fork this repository
+- Push your code to your new forked repo
+- Let us know the name of your new repo
